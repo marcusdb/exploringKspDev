@@ -5,7 +5,7 @@ using System.Text;
 
 using UnityEngine;
 
-namespace MyKSPProject
+namespace TransferWindowPlanner
 {
 	/// <summary> 
 	/// My first part!

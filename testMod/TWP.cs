@@ -133,16 +133,7 @@ namespace TransferWindowPlanner
         internal override void Start()
         {
             LogFormatted("Searching for RSS");
-            AssemblyLoader.loadedAssemblies.TypeOperation(t =>
-            {
-                if(t.FullName == ("RealSolarSystem.RSSWatchDog")) {
-                    settings.RSSActive = true;
-                    if(!settings.RSSShowCalendarToggled) {
-                        settings.ShowCalendarToggle = true;
-                        settings.RSSShowCalendarToggled = true;
-                    }
-                }
-            });
+            
 
             //Init the KAC Integration
             KACWrapper.InitKACWrapper();

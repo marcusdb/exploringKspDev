@@ -7,23 +7,25 @@
     <OutputType>Library</OutputType>
     <RootNamespace>testmod</RootNamespace>
     <AssemblyName>testmod</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\output\plugins</OutputPath>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\Desktop\Kerbal Space Program\GameData\testmod\TransferWindowPlanner</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType></DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\output\plugins</OutputPath>
+    <OutputPath>..\..\..\..\..\Desktop\Kerbal Space Program\GameData\testmod\TransferWindowPlanner</OutputPath>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -41,6 +43,38 @@
   <ItemGroup>
     <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PlanetInfo.cs" />
+    <Compile Include="Framework\ConfigNodeStorage.cs" />
+    <Compile Include="Framework\ExtensionsUnity.cs" />
+    <Compile Include="Framework\MonoBehaviourExtended.cs" />
+    <Compile Include="Framework\MonoBehaviourWindow.cs" />
+    <Compile Include="Framework\SkinsLibrary.cs" />
+    <Compile Include="FrameworkExt\Extensions.cs" />
+    <Compile Include="FrameworkExt\KSPDateStructure.cs" />
+    <Compile Include="FrameworkExt\KSPDateTime.cs" />
+    <Compile Include="FrameworkExt\KSPTimeSpan.cs" />
+    <Compile Include="FrameworkExt\MonoBehaviourWindowPlus.cs" />
+    <Compile Include="SharedStuff\LambertSolver.cs" />
+    <Compile Include="SharedStuff\LambertSolverHelpers.cs" />
+    <Compile Include="SharedStuff\ToolbarWrapper.cs" />
+    <Compile Include="SharedStuff\Utilities.cs" />
+    <Compile Include="EmptyClass.cs" />
+    <Compile Include="Resources.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="StylesAndSkins.cs" />
+    <Compile Include="TimeObjects.cs" />
+    <Compile Include="TWP.cs" />
+    <Compile Include="TWPWindow.cs" />
+    <Compile Include="TWPWindowDebug.cs" />
+    <Compile Include="TWPWindowSettings.cs" />
+    <Compile Include="TWPWindowSettingsBlockout.cs" />
+    <Compile Include="TWPWindowWorkerLongRun.cs" />
+    <Compile Include="TWPWindowWorkers.cs" />
+    <Compile Include="SharedStuff\AngleRenderEject.cs" />
+    <Compile Include="SharedStuff\AngleRenderPhase.cs" />
+    <Compile Include="SharedStuff\AppLauncher.cs" />
+    <Compile Include="SharedStuff\KACWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="testmod.csproj" />
   </ItemGroup>
 </Project>
