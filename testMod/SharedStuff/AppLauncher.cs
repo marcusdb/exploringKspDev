@@ -73,7 +73,7 @@ namespace TransferWindowPlanner
             //LogFormatted("AppLauncher: Destroying Button-BEFORE NULL CHECK");
             if (btnAppLauncher != null)
             {
-                ApplicationLauncherButton[] lstButtons = TransferWindowPlanner.FindObjectsOfType<ApplicationLauncherButton>();
+                //ApplicationLauncherButton[] lstButtons = TransferWindowPlanner.FindObjectsOfType<ApplicationLauncherButton>();
                 //LogFormatted("AppLauncher: Destroying Button-Button Count:{0}", lstButtons.Length);
                 ApplicationLauncher.Instance.RemoveModApplication(btnAppLauncher);
                 btnAppLauncher = null;

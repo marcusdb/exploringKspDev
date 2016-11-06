@@ -224,7 +224,7 @@ namespace TransferWindowPlanner
 
         private Double PhaseAngleCalc(Orbit o1, Orbit o2, Double UT)
         {
-            Vector3d n = o1.GetOrbitNormal();
+            //Vector3d n = o1.GetOrbitNormal();
 
             Vector3d p1 = o1.getRelativePositionAtUT(UT);
             Vector3d p2 = o2.getRelativePositionAtUT(UT);

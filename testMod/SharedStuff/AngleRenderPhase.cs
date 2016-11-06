@@ -112,7 +112,7 @@ namespace TransferWindowPlanner
             //Get the orbit lines material so things look similar
             Material orbitLines = ((MapView)GameObject.FindObjectOfType(typeof(MapView))).orbitLinesMaterial;
 
-            Material dottedLines = ((MapView)GameObject.FindObjectOfType(typeof(MapView))).dottedLineMaterial;
+            //Material dottedLines = ((MapView)GameObject.FindObjectOfType(typeof(MapView))).dottedLineMaterial;
 
             //init all the lines
             lineStart = InitLine(objLineStart, Color.blue, 2, 10, orbitLines);

@@ -524,13 +524,13 @@ namespace TransferWindowPlanner
                 DVEjectionRect = GUILayoutUtility.GetLastRect();
                 EjectionDetailsYOffset = DVEjectionRect.y + 20;
             }
-            if (DVEjectionRect!=null){
+            //if (DVEjectionRect!=null){
                 if (GUI.Button(new Rect(DVEjectionRect.x + DVEjectionRect.width-20, DVEjectionRect.y, 16, 16), new GUIContent(Resources.btnInfo, "Toggle Details..."), new GUIStyle()))
                 {
                     ShowEjectionDetails = !ShowEjectionDetails;
                     if (!ShowEjectionDetails) WindowRect.height = 400;
                 }
-            }
+            //}
             GUILayout.EndHorizontal();
             if (ShowEjectionDetails) {
                 GUILayout.Label(String.Format("{0:0.0} m/s", TransferSelected.EjectionDVPrograde), Styles.styleTextYellow);

@@ -7,6 +7,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>testmod</RootNamespace>
     <AssemblyName>testmod</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -73,8 +74,5 @@
     <Compile Include="SharedStuff\AngleRenderPhase.cs" />
     <Compile Include="SharedStuff\AppLauncher.cs" />
     <Compile Include="SharedStuff\KACWrapper.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="testmod.csproj" />
   </ItemGroup>
 </Project>
